@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #111, #660000);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background: rgba(255, 0, 0, 0.8);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px yellow;
+}
+
+.message h1 {
+  font-size: 2.2em;
+  color: yellow;
+  text-shadow: 0 0 5px red;
+}
+
+.mcqueen {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  font-size: 24px;
+  color: yellow;
+  opacity: 0.7;
+  animation: fall 4s linear forwards;
+  text-shadow: 0 0 5px red;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}

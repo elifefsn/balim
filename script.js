@@ -3,7 +3,7 @@ function createHeart() {
   heart.classList.add("heart");
 
   // Kalp yerine yıldırım ve kalp karışık
-  const symbols = ["❤️", "⚡", "💥"];
+  const symbols = ["❤️", "💋", "💞"];
   heart.textContent = symbols[Math.floor(Math.random() * symbols.length)];
 
   heart.style.left = Math.random() * 100 + "vw";

@@ -17,7 +17,7 @@ body {
   background: rgba(255, 0, 0, 0.8);
   padding: 20px 30px;
   border-radius: 15px;
-  box-shadow: 0 0 20px yellow;
+  box-shadow: 0 0 20px pink;
 }
 
 .message h1 {
